@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Examples Collection</string>
+    <string name="app_description">This is a collection of features i have implemented on my projects or have picked my interest</string>
+
+    <string name="your_color_is">Your color is: %1$s</string>
+    <string name="open_from_qr">Open from QR</string>
+    <string name="opened_from_qr">This was opened from a QR code</string>
+    <string name="to_open_from_qr">To open this from a QR code create one from a link like bellow</string>
+    <string name="qr_example">https://www.qrbydnieln7.com/#COLOR_IN_HEXADECIMAL</string>
+</resources>

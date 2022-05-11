@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_description">Esta es una colección de funciones implementadas en mis proyectos o que me han interesado</string>
+
+    <string name="your_color_is">Tu color es: %1$s</string>
+    <string name="open_from_qr">Abrir desde QR</string>
+    <string name="opened_from_qr">Esta pantalla fue abierta desde código QR</string>
+    <string name="to_open_from_qr">Para abrir desde código QR crea uno con un link como el siguiente</string>
+    <string name="qr_example">https://www.qrbydnieln7.com/#COLOR_EN_HEXADECIMAL</string>
+</resources>
