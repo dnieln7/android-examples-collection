@@ -6,6 +6,9 @@ import android.content.Intent
 import com.dnieln7.collection.R
 import com.dnieln7.collection.utils.toastLong
 
+/**
+ * This Receiver must be declared on Manifest
+ */
 class ActionReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
