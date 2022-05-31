@@ -32,6 +32,13 @@
             android:id="@+id/qr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="@string/open_from_qr" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notifications" />
     </LinearLayout>
 </ScrollView>

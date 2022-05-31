@@ -7,4 +7,9 @@
     <string name="opened_from_qr">This was opened from a QR code</string>
     <string name="to_open_from_qr">To open this from a QR code create one from a link like bellow</string>
     <string name="qr_example">https://www.qrbydnieln7.com/#COLOR_IN_HEXADECIMAL</string>
+    <string name="notification_action_triggered">Hello from notification</string>
+    <string name="send_action">Send action</string>
+    <string name="test_notification_action">Test notification with action</string>
+    <string name="notification_with_action">Notification with action</string>
+    <string name="notifications">Notifications</string>
 </resources>

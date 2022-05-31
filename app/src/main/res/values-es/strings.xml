@@ -7,4 +7,9 @@
     <string name="opened_from_qr">Esta pantalla fue abierta desde código QR</string>
     <string name="to_open_from_qr">Para abrir desde código QR crea uno con un link como el siguiente</string>
     <string name="qr_example">https://www.qrbydnieln7.com/#COLOR_EN_HEXADECIMAL</string>
+    <string name="notification_action_triggered">Hola desde notificación</string>
+    <string name="send_action">Enviar acción</string>
+    <string name="test_notification_action">Prueba de notificación con acción</string>
+    <string name="notification_with_action">Notificación con acción</string>
+    <string name="notifications">Notificaciones</string>
 </resources>

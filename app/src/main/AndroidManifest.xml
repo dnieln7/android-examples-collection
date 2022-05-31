@@ -24,9 +24,9 @@
 
         <activity
             android:name=".qr.QrActivity"
-            android:label="@string/open_from_qr"
-            android:exported="true">
-            <intent-filter android:label="@string/open_from_qr">
+            android:exported="true"
+            android:label="@string/open_from_qr">
+            <intent-filter android:label="open_from_qr">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -34,8 +34,19 @@
 
                 <data
                     android:host="www.qrbydnieln7.com"
-                    android:scheme="https" />
+                    android:scheme="http" />
+                <data android:scheme="https" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".notification.NotificationsActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".notification.ActionReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
     </application>
 </manifest>
