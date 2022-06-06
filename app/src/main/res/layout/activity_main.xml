@@ -39,6 +39,13 @@
             android:id="@+id/notifications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="@string/notifications" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/animations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/animations" />
     </LinearLayout>
 </ScrollView>

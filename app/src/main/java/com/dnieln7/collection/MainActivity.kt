@@ -3,6 +3,7 @@ package com.dnieln7.collection
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dnieln7.collection.animations.AnimationsActivity
 import com.dnieln7.collection.databinding.ActivityMainBinding
 import com.dnieln7.collection.notification.NotificationsActivity
 import com.dnieln7.collection.qr.QrActivity
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.notifications.setOnClickListener {
             startActivity(Intent(this, NotificationsActivity::class.java))
+        }
+
+        binding.animations.setOnClickListener {
+            startActivity(Intent(this, AnimationsActivity::class.java))
         }
     }
 }

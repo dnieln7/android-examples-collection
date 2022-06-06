@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidExamplesCollection">
-
+        <activity
+            android:name=".animations.AnimationsActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,7 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".qr.QrActivity"
             android:exported="true"
@@ -38,7 +39,6 @@
                 <data android:scheme="https" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".notification.NotificationsActivity"
             android:exported="false" />
@@ -47,6 +47,6 @@
             android:name=".notification.ActionReceiver"
             android:enabled="true"
             android:exported="false" />
-
     </application>
+
 </manifest>

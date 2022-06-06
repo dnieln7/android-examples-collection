@@ -12,4 +12,5 @@
     <string name="test_notification_action">Prueba de notificación con acción</string>
     <string name="notification_with_action">Notificación con acción</string>
     <string name="notifications">Notificaciones</string>
+    <string name="animations">Animaciones</string>
 </resources>
