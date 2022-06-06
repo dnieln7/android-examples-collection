@@ -34,8 +34,8 @@ class AnimationsActivity : AppCompatActivity() {
 
         binding.changeColor.setOnClickListener {
             CommonAnimators.changeColor(
-                binding.waterContainer,
-                getColor(R.color.primaryLight),
+                binding.waterDrop,
+                getColor(R.color.secondary),
                 getColor(R.color.primary)
             )
         }

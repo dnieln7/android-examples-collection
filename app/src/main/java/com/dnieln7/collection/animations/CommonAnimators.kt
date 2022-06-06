@@ -66,8 +66,8 @@ object CommonAnimators {
         }.start()
     }
 
-    fun changeColor(view: View, fromColor: Int, toColor: Int) {
-        ObjectAnimator.ofArgb(view, "backgroundColor", fromColor, toColor).apply {
+    fun changeColor(view: ImageView, fromColor: Int, toColor: Int) {
+        ObjectAnimator.ofArgb(view, "colorFilter", fromColor, toColor).apply {
             duration = 1000
             repeatCount = 1
             repeatMode = ObjectAnimator.REVERSE

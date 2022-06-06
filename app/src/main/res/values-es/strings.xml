@@ -13,4 +13,13 @@
     <string name="notification_with_action">Notificación con acción</string>
     <string name="notifications">Notificaciones</string>
     <string name="animations">Animaciones</string>
+    <string name="common_animations">Animaciones comunes</string>
+    <string name="controls">Controles</string>
+    <string name="rotate">Rotar</string>
+    <string name="translate">Transladar</string>
+    <string name="scale">Escalar</string>
+    <string name="fade">Transparencia</string>
+    <string name="change_color">Cambiar color</string>
+    <string name="shower">Lluvia</string>
+    <string name="result">Resultado</string>
 </resources>
