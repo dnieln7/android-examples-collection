@@ -46,6 +46,14 @@
             android:id="@+id/animations"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="@string/animations" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/location" />
     </LinearLayout>
 </ScrollView>

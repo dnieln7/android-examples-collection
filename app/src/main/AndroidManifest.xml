@@ -3,6 +3,8 @@
     package="com.dnieln7.collection">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidExamplesCollection">
+
+        <activity
+            android:name=".location.LocationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
         <activity
             android:name=".animations.AnimationsActivity"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,10 +32,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".qr.QrActivity"
             android:exported="true"
-            android:label="@string/open_from_qr">
+            android:label="@string/open_from_qr"
+            android:permission="">
             <intent-filter android:label="open_from_qr">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -39,6 +50,7 @@
                 <data android:scheme="https" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".notification.NotificationsActivity"
             android:exported="false" />
@@ -47,6 +59,9 @@
             android:name=".notification.ActionReceiver"
             android:enabled="true"
             android:exported="false" />
-    </application>
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+    </application>
 </manifest>

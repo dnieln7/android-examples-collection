@@ -22,4 +22,14 @@
     <string name="change_color">Cambiar color</string>
     <string name="shower">Lluvia</string>
     <string name="result">Resultado</string>
+    <string name="location">Ubicación</string>
+    <string name="map_type">Tipo de mapa</string>
+    <string name="minimalistic_map_theme">Mapa minimalista (Solo mapa normal)</string>
+    <string name="settings">Ajustes</string>
+    <string name="location_tracking">Rastreo de ubicación</string>
+    <string name="clear_map">Limpiar mapa</string>
+    <string name="search">Buscar</string>
+    <string name="mark_location">Marcar ubicación</string>
+    <string name="latitude">Latitud</string>
+    <string name="longitude">Longitud</string>
 </resources>

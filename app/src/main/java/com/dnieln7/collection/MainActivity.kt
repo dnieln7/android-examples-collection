@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dnieln7.collection.animations.AnimationsActivity
 import com.dnieln7.collection.databinding.ActivityMainBinding
+import com.dnieln7.collection.location.LocationActivity
 import com.dnieln7.collection.notification.NotificationsActivity
 import com.dnieln7.collection.qr.QrActivity
 
@@ -27,6 +28,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.animations.setOnClickListener {
             startActivity(Intent(this, AnimationsActivity::class.java))
+        }
+
+        binding.location.setOnClickListener {
+            if (LocationActivity.hasLocationPermissions(this)) {
+                startActivity(Intent(this, LocationActivity::class.java))
+            } else {
+                LocationActivity.requestLocationPermissions(this)
+            }
         }
     }
 }
