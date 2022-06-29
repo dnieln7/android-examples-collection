@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AndroidExamplesCollection">
 
         <activity
-            android:name=".location.LocationActivity"
+            android:name=".maps.MapsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 

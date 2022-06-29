@@ -1,4 +1,4 @@
-package com.dnieln7.collection.location
+package com.dnieln7.collection.maps
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -12,7 +12,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.dnieln7.collection.R
-import com.dnieln7.collection.databinding.ActivityLocationBinding
+import com.dnieln7.collection.databinding.ActivityMapsBinding
 import com.dnieln7.collection.databinding.UiMapSettingsBinding
 import com.dnieln7.collection.utils.BitmapHelper
 import com.dnieln7.collection.utils.addStyle
@@ -21,14 +21,17 @@ import com.dnieln7.collection.utils.setMyLocationButtonPosition
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.*
+import com.google.android.gms.maps.model.BitmapDescriptor
+import com.google.android.gms.maps.model.GroundOverlayOptions
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.maps.android.ktx.awaitMap
 
 @SuppressLint("MissingPermission")
-class LocationActivity : AppCompatActivity() {
+class MapsActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLocationBinding
+    private lateinit var binding: ActivityMapsBinding
     private lateinit var map: GoogleMap
 
     private var hasBeenStyled: Boolean = false
@@ -43,7 +46,7 @@ class LocationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLocationBinding.inflate(layoutInflater)
+        binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
@@ -85,7 +88,7 @@ class LocationActivity : AppCompatActivity() {
     }
 
     private fun goToCoordinates(latLng: LatLng) {
-        val zoomLevel = 20F // 1: World 5: Continent 10: City 15: Streets 20: Buildings
+        val zoomLevel = 15F // 1: World 5: Continent 10: City 15: Streets 20: Buildings
 
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoomLevel))
     }
