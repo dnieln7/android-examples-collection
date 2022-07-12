@@ -14,7 +14,6 @@ import androidx.lifecycle.lifecycleScope
 import com.dnieln7.collection.R
 import com.dnieln7.collection.databinding.ActivityMapsBinding
 import com.dnieln7.collection.databinding.UiMapSettingsBinding
-import com.dnieln7.collection.utils.BitmapHelper
 import com.dnieln7.collection.utils.addStyle
 import com.dnieln7.collection.utils.removeStyle
 import com.dnieln7.collection.utils.setMyLocationButtonPosition

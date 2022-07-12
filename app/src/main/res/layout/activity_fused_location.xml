@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".location.FusedLocationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/fused_location"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/last_known_location"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lk_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/latitude_placeholder" />
+
+        <TextView
+            android:id="@+id/lk_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/longitude_placeholder" />
+
+        <TextView
+            android:id="@+id/lk_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/altitude_placeholder" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/last_known_location"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/get_last_known_location" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/current_location"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cl_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/latitude_placeholder" />
+
+        <TextView
+            android:id="@+id/cl_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/longitude_placeholder" />
+
+        <TextView
+            android:id="@+id/cl_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/altitude_placeholder" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/current_location"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/get_current_location" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/location_updates"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lu_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/latitude_placeholder" />
+
+        <TextView
+            android:id="@+id/lu_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/longitude_placeholder" />
+
+        <TextView
+            android:id="@+id/lu_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="@string/altitude_placeholder" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/updates_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/location_updates"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

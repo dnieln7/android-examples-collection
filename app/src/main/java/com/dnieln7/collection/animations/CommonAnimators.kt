@@ -14,7 +14,7 @@ import androidx.core.animation.addListener
 import com.google.android.material.card.MaterialCardView
 
 /**
- * Transform the view temporally
+ * Transform the view temporally or permanently
  */
 object CommonAnimators {
 

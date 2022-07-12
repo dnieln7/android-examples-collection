@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <array name="map_types">
-        <item>Mapa normal</item>
-        <item>Mapa satelital</item>
-        <item>Mapa híbrido</item>
-        <item>Mapa de terreno</item>
-    </array>
-</resources>

@@ -33,4 +33,16 @@
     <string name="latitude">Latitude</string>
     <string name="longitude">Longitude</string>
     <string name="maps_api_key" translatable="false">MAPS_KEY</string>
+    <string name="permissions_denied">You need to grant the required permissions to continue</string>
+    <string name="services_denied">You need to enable the required services to continue</string>
+    <string name="maps">Google Maps</string>
+    <string name="fused_location" translatable="false">Fused Location API</string>
+    <string name="latitude_placeholder">Latitude: %1$s</string>
+    <string name="longitude_placeholder">Longitude: %1$s</string>
+    <string name="altitude_placeholder">Altitude: %1$s</string>
+    <string name="last_known_location">Last known location</string>
+    <string name="current_location">Current location</string>
+    <string name="location_updates">Location updates</string>
+    <string name="get_last_known_location">Get last known location</string>
+    <string name="get_current_location">Get current location</string>
 </resources>
