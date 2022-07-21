@@ -45,4 +45,10 @@
     <string name="location_updates">Location updates</string>
     <string name="get_last_known_location">Get last known location</string>
     <string name="get_current_location">Get current location</string>
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="battery_bubble_desc">Floating bubble displaying battery information</string>
+    <string name="battery_bubble">Battery bubble</string>
+    <string name="battery_bubble_running">Battery bubble is running...</string>
+    <string name="battery_service">Battery Service</string>
 </resources>

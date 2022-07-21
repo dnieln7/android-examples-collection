@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import com.dnieln7.collection.R
+import com.dnieln7.collection.utils.NotificationUtils
 import com.dnieln7.collection.utils.toastLong
 
 /**

@@ -3,6 +3,7 @@ package com.dnieln7.collection.notification
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.dnieln7.collection.databinding.ActivityNotificationsBinding
+import com.dnieln7.collection.utils.NotificationUtils
 
 class NotificationsActivity : AppCompatActivity() {
 

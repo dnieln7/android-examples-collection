@@ -62,5 +62,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="@string/fused_location" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bubble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/battery_bubble" />
     </LinearLayout>
 </ScrollView>

@@ -1,4 +1,4 @@
-package com.dnieln7.collection.notification
+package com.dnieln7.collection.utils
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -11,14 +11,19 @@ import android.graphics.BitmapFactory
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import com.dnieln7.collection.R
+import com.dnieln7.collection.bubble.BubbleActivity
+import com.dnieln7.collection.notification.ActionReceiver
 
 class NotificationUtils(context: Context) : ContextWrapper(context) {
 
     private val default = "General Messages"
+    private val batteryService = "Battery Service"
     private val defaultID = "com.dnieln7.collection.GENERAL"
+    private val batteryServiceID = "com.dnieln7.collection.SERVICE.BATTERY"
 
     init {
         createGeneralChannel()
+        createBatteryServiceChannel()
     }
 
     private fun getManager(): NotificationManager {
@@ -40,6 +45,22 @@ class NotificationUtils(context: Context) : ContextWrapper(context) {
             generalChannel.lockscreenVisibility = Notification.VISIBILITY_PUBLIC
 
             getManager().createNotificationChannel(generalChannel)
+        }
+    }
+
+    private fun createBatteryServiceChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            val serviceChannel = NotificationChannel(
+                batteryServiceID,
+                batteryService,
+                NotificationManager.IMPORTANCE_DEFAULT
+            )
+
+            serviceChannel.enableVibration(true)
+            serviceChannel.lockscreenVisibility = Notification.VISIBILITY_PUBLIC
+
+            getManager().createNotificationChannel(serviceChannel)
         }
     }
 
@@ -75,6 +96,23 @@ class NotificationUtils(context: Context) : ContextWrapper(context) {
             .build()
 
         return notification
+    }
+
+    fun batteryBubbleNotification(): Notification {
+        val pendingIntent = PendingIntent.getActivity(
+            applicationContext,
+            0,
+            Intent(this, BubbleActivity::class.java),
+            PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+        )
+
+        return NotificationCompat.Builder(this, batteryServiceID)
+            .setContentTitle(getString(R.string.battery_service))
+            .setContentText(getString(R.string.battery_bubble_running))
+            .setSmallIcon(R.drawable.ic_power)
+            .setOngoing(true)
+            .setContentIntent(pendingIntent)
+            .build()
     }
 
     fun notify(notification: Notification) {
